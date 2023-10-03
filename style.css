@@ -127,6 +127,9 @@ color: black;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer{
@@ -157,6 +160,30 @@ margin: 0;
 
 }
 
+/* Atualize a regra para a classe .carrossel */
+.carrossel {
+    width: 100%;
+    height: 100vh; /* Ocupar toda a altura da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover; /* Manter a proporção e cobrir toda a área */
+}
+
+/* Defina a largura de todos os elementos pais para 100% */
+html, body, main, .container-fluid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+section.container-fluid{
+    padding: 0%;
+}
+
+
 @media screen and (min-width:48em){
     .Logos{
     
@@ -181,4 +208,21 @@ margin: 0;
     footer{
         background-color: rgb(237, 199, 9);
     }
+
+
+    .fundo {
+        display: none; /* Ocultar o fundo de imagem */
+    }
+
+    html, body, main, .container-fluid {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+    }
+   
+   
+  
+    
+
 }

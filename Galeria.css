@@ -1,0 +1,42 @@
+.carrossel {
+    width: 100%;
+    height: 100vh; /* Ocupar toda a altura da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover; /* Manter a proporção e cobrir toda a área */
+}
+
+/* Defina a largura de todos os elementos pais para 100% */
+html, body, main, .container-fluid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+section.container-fluid{
+    padding: 0%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
+        background-color: black; /* Defina o fundo como preto */
+    }
+
+    
+}
+
+
+   
+
+  
